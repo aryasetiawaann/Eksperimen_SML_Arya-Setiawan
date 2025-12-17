@@ -25,7 +25,7 @@ jobs:
 
     - name: Run preprocessing
       run: |
-        python "preprocessing/automate_Arya-Setiawan.py"
+        python preprocessing/automate_Arya-Setiawan.py
 
     - name: Upload preprocessing data
       uses: actions/upload-artifact@v4
