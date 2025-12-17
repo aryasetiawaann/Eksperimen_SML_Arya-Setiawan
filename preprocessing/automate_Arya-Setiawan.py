@@ -119,7 +119,7 @@ if __name__ == "__main__":
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     PROCESSED_DATA_DIR = "preprocessing/heart_failure_preprocessing"
-    os.makedirs(os.path.join(BASE_DIR, PROCESSED_DATA_DIR))
+    os.makedirs(os.path.join(BASE_DIR, PROCESSED_DATA_DIR), exist_ok=True)
 
     preprocessing_data(
         data_path=os.path.join(BASE_DIR, "heart_failure_raw.csv"),
